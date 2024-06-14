@@ -10,14 +10,12 @@ public class Contador {
 
             try {
             	contar(parametro_01, parametro_02);   //chamando o método contendo a lógica de contagem
-
-            }catch (ParametrosInvalidosException e) {
+            } catch (ParametrosInvalidosException e) {
             	System.out.println("O segundo parâmetro deve ser maior que o primeiro!");
-
             }
         }
 	}
-    
+
 	static void contar(int parametro_01, int parametro_02)  throws ParametrosInvalidosException {
 		if(parametro_01 > parametro_02) {   //validar se parametro_01 é MAIOR que parametro_02 e lançar a exceção
             throw new ParametrosInvalidosException();
